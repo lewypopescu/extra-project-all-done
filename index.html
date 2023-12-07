@@ -6,6 +6,14 @@
     <meta name="description" content="The Best Barbershop in Your City" />
     <meta name="keywords" content="Barbershop, Hair, Beard, Haircuts" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +26,7 @@
   </head>
   <body>
     <!-- Hero section -->
-    <section>
+    <section class="hero">
       <!-- Sidebar -->
       <div>
         <!-- Logo -->
@@ -155,7 +163,7 @@
       </section>
 
       <!-- Services and prices section -->
-      <section id="prices">
+      <section class="services-and-prices" id="prices">
         <!-- Subtitle -->
         <div>
           <img src="./images/divider.svg" alt="-" />
@@ -204,7 +212,12 @@
           </ul>
         </div>
 
-        <button type="button">book a service</button>
+        <button
+          class="book-service-button book-service-button-light"
+          type="button"
+        >
+          book a service
+        </button>
       </section>
 
       <!-- Why us section -->
@@ -232,8 +245,10 @@
           <div>
             <img src="./images/divider.svg" alt="-" />
             <h3>Old school</h3>
+            <h3 class="subtitle subtitle-dark">Old school</h3>
           </div>
           <h2>Why do they come to us?</h2>
+          <h2 class="header header-dark">Why do they come to us?</h2>
           <p>
             Only good things are said about us. But it is better to see and feel
             1 time than to read 10 times.
@@ -247,8 +262,12 @@
         <div>
           <img src="./images/divider.svg" alt="-" />
           <h3>for true connoisseurs of the atmosphere</h3>
+          <h3 class="subtitle subtitle-dark">
+            for true connoisseurs of the atmosphere
+          </h3>
         </div>
         <h2>Our Barbers</h2>
+        <h2 class="header header-dark"></h2>
         <ul>
           <li>
             <img
@@ -289,6 +308,9 @@
         <div>
           <img src="./images/divider.svg" alt="-" />
           <h3>In Latin, &quot;barba&quot; means &quot;beard&quot;</h3>
+          <h3 class="subtitle subtitle-dark">
+            In Latin, &quot;barba&quot; means &quot;beard&quot;
+          </h3>
         </div>
         <ul>
           <li><img src="images/portfolio1.jpg" alt="Barber cuts hair" /></li>
@@ -301,15 +323,17 @@
       <!-- Contacts section -->
       <section id="contacts">
         <h2>Contacts</h2>
+      <section id="contacts" class="contact">
+        <h2 class="header header-light">Contacts</h2> 
         <address>
           <span>Main Street, 7A Kyiv, 08132</span> <br />
-          <a href="tel:+380441111111">+380441111111</a> <br />
+          <a href="tel:+380441111111">+38 044 111 11 11</a> <br />
           <a href="mailto:barbershop@email.com">barbershop@email.com</a> <br />
         </address>
         <div>
           <div>
             <img src="images/divider.svg" alt="-" />
-            <h3>Working hours</h3>
+            <h3 class="subtitle subtitle-light">Working hours</h3>
           </div>
           <p>
             Daily from <time datetime="9:00AM">9:00 AM</time> till
