@@ -22,9 +22,13 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hero-styles.css">
+    <link rel="stylesheet" href="./css/about-styles.css">
+    <link rel="stylesheet" href="./css/services-and-prices-styles.css">
     <title>Barbershop</title>
   </head>
   <body>
+    <div class="container">
     <!-- Hero section -->
     <section class="hero">
       <!-- Sidebar -->
@@ -120,9 +124,8 @@
     </section>
     <main>
       <!-- About section -->
-      <section id="about">
+      <section id="about" class="about">
         <!-- About images -->
-        <div>
           <img
             src="./images/about-img-1.jpg"
             alt="Barber trims beard"
@@ -135,19 +138,18 @@
             width="278"
             height="445"
           />
-        </div>
         <!-- About content -->
-        <div>
+        <div class="about-content">
           <div class="subtitle-container">
             <img src="./images/divider.svg" alt="-" />
             <h3 class="subtitle subtitle-dark">About</h3>
           </div>
           <h2 class="header header-dark">The Best Barbershop in Your City</h2>
-          <p class="about-content-1">
+          <p class="about-description-1">
             If you want to add more confidence to your image, you are definitely
             in the right place.
           </p>
-          <p class="about-content-2">
+          <p class="about-description-2">
             We are a team that never rests on its laurels and yearns for change.
             And once you fall into the hands of our master, you will never be
             the same again. We are a team that is always on the same wavelength
@@ -155,7 +157,7 @@
             comes to us!
           </p>
           <button
-            class="book-service-button book-service-button-dark"
+            class="book-service-button book-service-button-dark about-book-service-button"
             type="button"
           >
             book a service
@@ -174,8 +176,8 @@
         </div>
         <h2 class="header header-light">Services and Prices</h2>
         <!-- Prices lists -->
-        <div>
-          <ul>
+        <div class="services-price-lists">
+          <ul class="services=price-list-1">
             <li>
               <span>Men's Haircut</span>
               <span>from 300 UAH</span>
@@ -193,7 +195,7 @@
               <span>from 200 UAH</span>
             </li>
           </ul>
-          <ul>
+          <ul class="services-price-list-2">
             <li>
               <span>Trainee Haircut</span>
               <span>from 50 UAH</span>
@@ -363,5 +365,6 @@
         </ul>
       </div>
     </footer>
+    </div>
   </body>
 </html>
