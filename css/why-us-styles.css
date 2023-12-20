@@ -1,0 +1,58 @@
+.why-us {
+  height: 582px; /* dau click pe imaginea mare si imi iau heightul la tot containerul */
+  padding: 130px 155px; /*ma uit la elementele din container sa vad care e cel mai sus/dreapta/jos/stanga */
+  display: flex; /* ca sa mute why us in dreapta patrate */
+  gap: 130px; /* distanta dintre patrate si scrisul din drepata */
+}
+
+.why-us-cards {
+  --card-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+
+  max-width: calc(var(--card-width) * 2 + 30px);
+}
+
+.why-us-card {
+  flex-basis: var(--card-width);
+  height: 133px;
+
+  background-color: #f7f7f7;
+
+  padding: 20px 24px; /* in patrat ai 2 containere si dai distantele sus-dreapta-jos la 600 si satisfied customers per day */
+  display: flex; /* pt a pune pe centrul patratul impreuna cu justify content + align */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-us-card-shifted {
+  margin-top: 30px;
+}
+
+.why-us-card-title {
+  /* whyuscardtitle se refera la numerele din cards 600 20 50 100 */
+  color: var(--black-color);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.why-us-card-title > sup {
+  /*  clasa pt acel plus colorat prin > sup il facem direct copil si nu facem clasa separata cu alt nume */
+  color: var(--brand-color);
+  /* TODO make it smaller */
+}
+
+.why-us-card-description {
+  /* clasa aceasta se refera la descrierea de sub numerele 600 20 50 100 din carduri */
+  color: var(--black-color);
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

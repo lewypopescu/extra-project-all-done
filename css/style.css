@@ -155,26 +155,6 @@ ul {
   color: var(--white-color);
 }
 
-.why-us-cards {
-  --card-width: 170px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-
-  max-width: calc(var(--card-width) * 2 + 30px);
-}
-
-.why-us-card {
-  flex-basis: var(--card-width);
-  height: 133px;
-
-  background-color: #f7f7f7;
-}
-
-.why-us-card-shifted {
-  margin-top: 30px;
-}
-
 .contact-address {
   color: #9da4bd;
   font-size: 18px;
