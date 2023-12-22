@@ -1,0 +1,5 @@
+.footer {
+  /* clasa mare pe footer pt a pune una dupa alta copyright si socials media */
+  display: flex;
+  justify-content: space-between;
+}
