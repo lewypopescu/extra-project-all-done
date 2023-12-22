@@ -1,0 +1,12 @@
+.portfolio {
+  padding: 130px 55px; /* aici portfolio pus pe sectiune ca si clasa da distantele in tot containerul max sus,dreapta,jos,stanga*/
+}
+
+.portfolio-images {
+  display: flex; /* aici aranjam pozele sa fie una dupa alta si gapul dintre ele, clasa fiind pusa pe ul ce contine toate pozele */
+  gap: 30px;
+}
+
+.portfolio-subtitle-container {
+  margin-bottom: 44px; /* aici mut slider si subtitlu cu 44 px sa le dau distanta */
+}

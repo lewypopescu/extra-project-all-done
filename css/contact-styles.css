@@ -1,6 +1,57 @@
+.contact-container {
+  display: flex; /* ca sa le pun una dupa alta cele 2 book service si celalalt*/
+}
+
+.contact-book-service {
+  background-color: #191c26;
+  width: 55%; /* s-a luat tot containerul de 1280 si s-a facut 625 width
+  de la book a service impartit la 1280 width cat are tot containerul
+  mare => 48% , el a luat 45% deci ar fi 55% */
+}
+
 .contact {
-  /* TODO: replace with image backround */
-  background-color: var(--black-color);
+  width: 45%; /* deci diferenta de la 65 celalat container book a service */
+  --price-list-bg-color: rgba(25, 28, 38, 0.9);
+  background-image: linear-gradient(
+      var(--price-list-bg-color),
+      var(--price-list-bg-color)
+    ),
+    url("../images/contact.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--white-color);
   height: 644px;
+
+  padding: 130px 100px; /* marginile maxime pt contacts container */
+}
+
+.contact-address {
+  color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+
+  display: flex; /* display si align ca sa aranjez iconitele + descrierea -centrare si drept */
+  align-items: center;
+}
+
+.contact-address-email {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  width: 24px; /* dimensiunile iconitelor */
+  height: 24px;
+  margin-right: 16px; /* distanta dintre iconita si descriere */
+}
+
+.contact-working-hours {
+  color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.667%; /* 166.667% */
+  letter-spacing: 0.36px;
 }
