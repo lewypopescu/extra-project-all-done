@@ -7,6 +7,54 @@
   width: 55%; /* s-a luat tot containerul de 1280 si s-a facut 625 width
   de la book a service impartit la 1280 width cat are tot containerul
   mare => 48% , el a luat 45% deci ar fi 55% */
+  padding: 130px 40px 0 55px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.contact-form-input-group {
+  display: flex;
+  gap: 30px;
+}
+
+/*practic am selectat toti copii care au un parinte cu clasa contact form input group */
+.contact-form-input-group > * {
+  flex-grow: 1;
+}
+
+.contact-form-elem {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: white;
+  padding-bottom: 8px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+.contact-form-elem:hover,
+.contact-form-elem:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.contact-form-elem::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.contact-form-elem:hover::placeholder,
+.contact-form-elem:focus::placeholder {
+  color: white;
+}
+.contact-form-elem-textarea {
+  resize: none;
 }
 
 .contact {
