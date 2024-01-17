@@ -1,8 +1,16 @@
 .why-us {
-  height: 582px; /* dau click pe imaginea mare si imi iau heightul la tot containerul */
-  padding: 130px 155px; /*ma uit la elementele din container sa vad care e cel mai sus/dreapta/jos/stanga */
-  display: flex; /* ca sa mute why us in dreapta patrate */
-  gap: 130px; /* distanta dintre patrate si scrisul din drepata */
+  /* height: 582px; dau click pe imaginea mare si imi iau heightul la tot containerul */
+  padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+  display: flex; /*ca sa mute why us in dreapta patrate */
+  flex-direction: column-reverse; /* iti intoarce ordinea- testeaza*/
+  gap: 44px; /* distanta dintre patrate si scrisul din drepata */
+}
+
+.why-us-title-container {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .why-us-cards {
@@ -10,6 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
+  margin-left: auto;
 
   max-width: calc(var(--card-width) * 2 + 30px);
 }
@@ -55,4 +64,17 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+@media screen and (width >= 1158px) {
+  .why-us {
+    flex-direction: row; /* iti intoarce ordinea- testeaza*/
+
+    justify-content: space-evenly; /* distanta dintre patrate si scrisul din drepata */
+    margin-left: 0;
+  }
+
+  .why-us-cards {
+    margin-left: 0;
+  }
 }

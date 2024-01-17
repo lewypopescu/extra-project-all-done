@@ -1,8 +1,8 @@
 .footer {
   /* clasa mare pe footer pt a pune una dupa alta copyright si socials media */
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  padding: 55px;
+  /* padding: 55px; */
 }
 
 .footer-copy {

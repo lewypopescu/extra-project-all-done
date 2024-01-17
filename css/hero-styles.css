@@ -6,7 +6,7 @@
 .hero-sidebar {
   width: 155px;
   padding: 32px 32px 40px 55px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -46,73 +46,13 @@
 .hero-content-container {
   position: relative;
   z-index: 1;
-  padding: 40px 55px 40px 100px;
+  /* padding: 40px 55px 40px 100px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-
-.hero-control-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 26px;
-}
-
-.hero-control-button {
-  background: none;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 1.1px;
-  cursor: pointer;
-}
-
-.hero-control-button-dark {
-  color: var(--gray-color);
-}
-
-.hero-control-button-light {
-  color: var(--white-color);
-}
-
-.hero-social-media-element {
-  transform: rotate(-90deg);
-}
-
-.hero-social-media-element:first-child {
-  margin-bottom: 80px;
-}
-
-.hero-divider {
-  margin-top: 40px;
-  transform: rotate(-90deg);
-}
-
-.hero-navbar {
-  display: flex;
-  align-items: center;
-}
-
-.hero-navbar-list {
-  display: flex;
-  gap: 40px;
-}
-
-.hero-header-cta {
-  display: flex;
-  gap: 40px;
-}
-
-.hero-header-address {
-  display: flex;
-  align-items: center;
-}
-
-.hero-header {
-  display: flex;
-  justify-content: space-between;
+fcontent: space-between;
 }
 
 .hero-content > :nth-child(n + 2) {
@@ -122,7 +62,7 @@
 .hero-title {
   color: var(--white-color);
   font-family: var(--header-font-family);
-  font-size: 72px;
+  font-size: 48px;
   font-style: normal;
   line-height: normal;
   letter-spacing: 3.6px;
